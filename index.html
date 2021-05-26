@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Systeme d' onglets</title>
+
+    <!-- <link href="./assets/bootstrap.css" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: white;
+      }
+
+      #tabs .tab-titles li {
+        background-color: rgb(190, 184, 184);
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.4rem 0.6rem;
+        transition: all 0.2 ease-in-out;
+      }
+
+      #tabs .tab-titles li:hover,
+      #tabs .tab-titles li:active {
+        background-color: grey;
+        color: white;
+        cursor: pointer;
+      }
+      #tabs > div {
+        display: none;
+      }
+      #tabs > div.active {
+        display: block;
+        box-shadow: 0 0 2px grey;
+        padding: 1rem 2rem;
+        background-color: white;
+      }
+      #tabs .tab-titles {
+        margin-bottom: 0.3rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-9 mt-5">
+          <div id="tabs">
+            <ul class="tab-titles">
+              <li data-tabtitle="0" class="active">Titre 1</li>
+              <li data-tabtitle="1">Titre 2</li>
+              <li data-tabtitle="2">Titre 3</li>
+            </ul>
+            <div id="tab0" class="active">
+              <p>
+                Texte 1 : Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Iusto sint quos sequi delectus obcaecati, similique
+                tempore. Adipisci earum minus sequi quaerat maxime, quia, velit
+                ratione enim provident numquam est! Dignissimos.
+              </p>
+            </div>
+            <div id="tab1">
+              <p>
+                Texte 2 : Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Iusto sint quos sequi delectus obcaecati, similique
+                tempore. Adipisci earum minus sequi quaerat maxime, quia, velit
+                ratione enim provident numquam est! Dignissimos.
+              </p>
+            </div>
+            <div id="tab2">
+              <p>
+                Texte 3 : Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Iusto sint quos sequi delectus obcaecati, similique
+                tempore. Adipisci earum minus sequi quaerat maxime, quia, velit
+                ratione enim provident numquam est! Dignissimos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/bootstrap.js" type="text/javascript"></script>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
